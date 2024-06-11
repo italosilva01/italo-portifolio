@@ -4,6 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  --purple: #7b4ae2;
+  --foreground: #090e16;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -18,12 +20,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--foreground);
 }
 
 @layer utilities {
