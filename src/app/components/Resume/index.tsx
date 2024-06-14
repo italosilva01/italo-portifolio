@@ -4,6 +4,7 @@ import { Label } from "@components/Label";
 import { Title } from "@components/Title";
 import { DownloadCv } from "@components/DownloadCv";
 import { LetsTalk } from "@components/LetsTalk";
+import { MenuSocialMedia } from "@components/Menu/MenuSocialMedia";
 
 export const Resume = () => {
   return (
@@ -21,6 +22,9 @@ export const Resume = () => {
       <Box className="flex flex-col gap-6">
         <Label text="👋 Saudações!" />
         <Title />
+        <Box className="hidden md:block">
+          <MenuSocialMedia />
+        </Box>
       </Box>
       <Box className="hidden md:block">
         <Image
@@ -31,7 +35,7 @@ export const Resume = () => {
           className="rounded-full	"
         />
       </Box>
-      <Box>
+      <Box className="md:flex  md:flex-col md:items-end md:gap-2">
         <DownloadCv />
         <LetsTalk />
       </Box>
