@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const Menu = () => {
   return (
-    <ContainerMenu className="mt-4 md:px-7.30%">
+    <ContainerMenu className="mt-5 ">
       <Box className="flex justify-center gap-x-4 md:hidden">
         <a href="https://github.com/italosilva01" target="_blank">
           <Image
@@ -28,7 +28,10 @@ export const Menu = () => {
           />
         </a>
       </Box>
-      <Box className="hidden md:flex bg-purple-dark/[.05] rounded-2xl   justify-between shadow-md	">
+      <Box
+        className="hidden	 md:flex bg-purple-dark/[.05] rounded-2xl   justify-between shadow-lg	"
+        sx={{ paddingX: 3, paddingY: 0.5 }}
+      >
         <Image src="/Logo.svg" width={36} height={40} alt="logo" />
         <MenuList className="flex">
           <MenuItem>Home</MenuItem>
