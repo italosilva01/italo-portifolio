@@ -16,6 +16,7 @@ export const Resume = () => {
           height={308}
           alt="Imagem de perfil do Francisco Italo "
           className="rounded-full	"
+          priority
         />
       </Box>
 

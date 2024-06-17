@@ -7,12 +7,12 @@ import { MenuSocialMedia } from "@components/Menu/MenuSocialMedia";
 
 export const Menu = () => {
   return (
-    <ContainerMenu className="mt-5 ">
+    <ContainerMenu className="mt-5">
       <Box className="md:hidden">
         <MenuSocialMedia />
       </Box>
       <Box
-        className="hidden	 md:flex bg-purple-dark/[.05] rounded-2xl   justify-between shadow-lg	container"
+        className="hidden	 md:flex w-full  bg-purple-dark/[.05] rounded-2xl mx-auto justify-between shadow-lg 	"
         sx={{ paddingX: 3, paddingY: 0.5 }}
       >
         <Image src="/Logo.svg" width={36} height={40} alt="logo" />
