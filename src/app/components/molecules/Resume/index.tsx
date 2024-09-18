@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { Box } from "@mui/material";
-import { Label } from "@components/Label";
-import { Title } from "@components/Title";
-import { DownloadCv } from "@components/DownloadCv";
-import { LetsTalk } from "@components/LetsTalk";
-import { MenuSocialMedia } from "@components/Menu/MenuSocialMedia";
+import Image from 'next/image';
+import { Box } from '@mui/material';
+import { Label } from '@components/atons/Label';
+import { Title } from '@components/atons/Title';
+import { DownloadCv } from '@components/atons/DownloadCv';
+import { LetsTalk } from '@components/atons/LetsTalk';
+import { MenuSocialMedia } from '@components/Menu/MenuSocialMedia';
 
 export const Resume = () => {
   return (
-    <Box className="flex flex-col gap-10 md:w-full border-1 border-white md:flex-row md:items-center md:mt-24 md:justify-between">
+    <Box className="flex flex-col gap-10 md:w-full border-1 border-white md:flex-row md:items-center  md:justify-between">
       <Box className="md:hidden">
         <Image
           src="/profileM.png"

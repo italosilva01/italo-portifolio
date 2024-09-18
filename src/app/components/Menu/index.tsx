@@ -16,7 +16,7 @@ export const Menu = () => {
         sx={{ paddingX: 3, paddingY: 0.5 }}
       >
         <Image src="/Logo.svg" width={36} height={40} alt="logo" />
-        <MenuList className="flex">
+        <MenuList className="flex" sx={{ color: "#fff" }}>
           <MenuItem>Home</MenuItem>
           <MenuItem>Sobre mim</MenuItem>
           <MenuItem>Portfólio</MenuItem>

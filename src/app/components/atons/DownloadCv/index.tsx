@@ -1,5 +1,6 @@
 import DownloadIcon from "@mui/icons-material/Download";
 import Link from "next/link";
+
 export const DownloadCv = () => {
   return (
     <Link
@@ -8,7 +9,7 @@ export const DownloadCv = () => {
       download
       className="text-purple-dark/[0.5]"
     >
-      Baixar CV <DownloadIcon />{" "}
+      Baixar CV <DownloadIcon />
     </Link>
   );
 };

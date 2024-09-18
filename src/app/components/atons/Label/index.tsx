@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 interface LabelProps {
   text: string;
 }
+
 export const Label = ({ text }: LabelProps) => {
   return (
     <Box

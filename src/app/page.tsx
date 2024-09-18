@@ -1,11 +1,15 @@
-"use client";
-import { Menu } from "@components/Menu";
-import { ThemeProvider } from "@mui/material";
-import theme from "./theme";
-import dynamic from "next/dynamic";
+'use client';
+import { Menu } from '@components/Menu';
+import { ThemeProvider } from '@mui/material';
+import theme from './theme';
+import dynamic from 'next/dynamic';
+import { Experiences } from '@/app/components/molecules/Experiences';
 
 const ResumeDinamic = dynamic(
-  () => import("@components/Resume").then((component) => component.Resume),
+  () =>
+    import('@components/molecules/Resume').then(
+      (component) => component.Resume
+    ),
   {
     ssr: false,
   }
@@ -14,9 +18,10 @@ const ResumeDinamic = dynamic(
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex min-h-screen flex-col items-center align-middle gap-6 md:px-7.30% w-11/12 m-auto ">
+      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5 md:px-7.30% w-11/12 m-auto  ">
         <Menu />
         <ResumeDinamic />
+        <Experiences />
       </main>
     </ThemeProvider>
   );

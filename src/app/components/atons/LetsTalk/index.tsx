@@ -1,12 +1,15 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
 
+const SIZE = 24;
+const PADDING = 1;
+
 export const LetsTalk = () => {
   return (
     <Button
       variant="outlined"
       sx={{
-        padding: 1,
+        padding: PADDING,
       }}
       className="border-purple-dark/[0.5] text-purple-dark/[0.5] md:rounded-xl"
     >
@@ -15,7 +18,7 @@ export const LetsTalk = () => {
         target="_blank"
         className="flex justify-center text-start gap-2 items-center"
       >
-        <Image src="/whatsappLogo.svg" alt={""} width={24} height={24} />
+        <Image src="/whatsappLogo.svg" alt={""} width={SIZE} height={SIZE} />
         <span>Vamos conversar</span>
       </a>
     </Button>

@@ -8,6 +8,7 @@
   --foreground: #090e16;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-default-rgba: 255, 255, 255, 0.5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +20,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-default-rgba));
   background: var(--foreground);
 }
 
