@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import { CardInfo } from '@components/atons/CardInfo';
 
 import IconCode from '@public/iconCode.svg';
+import ResumeExperience from '@components/atons/ResumeExperience';
 
 export const Experiences = () => {
   return (
@@ -21,16 +22,13 @@ export const Experiences = () => {
         </Box>
         <div
           className="hidden md:flex w-[898px] justify-center gap-40
-        bg-purple-dull rounded h-50"
+        bg-purple-dull-10 rounded h-50 py-[30px]"
         >
-          <div className="">
-            <p>Desenvolvedor</p>
-            <p>Front end</p>
-          </div>
-          <div className="">
-            <p>Desenvolvedor</p>
-            <p>Front end</p>
-          </div>
+          <ResumeExperience text="Desenvolvedor" principalText="Front end" />
+          <ResumeExperience
+            text="Dezenas de projetos e"
+            principalText="Experiências"
+          />
         </div>
       </div>
     </Box>
