@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Box, MenuItem, MenuList } from "@mui/material";
-import { ContainerMenu } from "./style";
-import Image from "next/image";
-import { MenuSocialMedia } from "@components/Menu/MenuSocialMedia";
+import { Box, MenuList } from '@mui/material';
+import { ContainerMenu, MenuItemStyled } from './style';
+import Image from 'next/image';
+import { MenuSocialMedia } from '@components/Menu/MenuSocialMedia';
 
 export const Menu = () => {
   return (
@@ -16,14 +16,14 @@ export const Menu = () => {
         sx={{ paddingX: 3, paddingY: 0.5 }}
       >
         <Image src="/Logo.svg" width={36} height={40} alt="logo" />
-        <MenuList className="flex" sx={{ color: "#fff" }}>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>Sobre mim</MenuItem>
-          <MenuItem>Portfólio</MenuItem>
-          <MenuItem>Skills</MenuItem>
-          <MenuItem>Carreira</MenuItem>
-          <MenuItem>Recomendações</MenuItem>
-          <MenuItem>Contato</MenuItem>
+        <MenuList className="flex" sx={{ color: '#fff' }}>
+          <MenuItemStyled>Home</MenuItemStyled>
+          <MenuItemStyled>Sobre mim</MenuItemStyled>
+          <MenuItemStyled>Portfólio</MenuItemStyled>
+          <MenuItemStyled>Skills</MenuItemStyled>
+          <MenuItemStyled>Carreira</MenuItemStyled>
+          <MenuItemStyled>Recomendações</MenuItemStyled>
+          <MenuItemStyled>Contato</MenuItemStyled>
         </MenuList>
       </Box>
     </ContainerMenu>

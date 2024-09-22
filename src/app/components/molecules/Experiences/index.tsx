@@ -22,7 +22,7 @@ export const Experiences = () => {
         </Box>
         <div
           className="hidden md:flex w-[898px] justify-center gap-40
-        bg-purple-dull-10 rounded h-50 py-[30px]"
+        bg-purple-dull-10 rounded-2xl h-50 py-[30px]"
         >
           <ResumeExperience text="Desenvolvedor" principalText="Front end" />
           <ResumeExperience
