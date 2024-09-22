@@ -5,7 +5,7 @@ import IconCode from '@public/iconCode.svg';
 
 export const Experiences = () => {
   return (
-    <Box className="w-full md:border-y md:py-[100px] ">
+    <Box className="w-full">
       <div className="flex flex-col gap-5 items-center">
         <Box className="flex justify-center gap-9 ">
           <CardInfo
