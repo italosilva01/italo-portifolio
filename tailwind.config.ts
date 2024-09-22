@@ -22,6 +22,7 @@ const config: Config = {
       white: 'rgb(255, 255, 255)',
       'purple-dark': '#7B4AE2',
       'purple-dull': 'rgba(123,74,226,0.5)',
+      'purple-dull-10': 'rgba(123,74,226,0.1)',
     },
     padding: {
       '7.30%': '7.30%',
