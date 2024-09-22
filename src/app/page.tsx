@@ -4,6 +4,7 @@ import { ThemeProvider } from '@mui/material';
 import theme from './theme';
 import dynamic from 'next/dynamic';
 import { Experiences } from '@/app/components/molecules/Experiences';
+import WrapperContent from '@components/atons/WrapprContent';
 
 const ResumeDinamic = dynamic(
   () =>
@@ -18,10 +19,16 @@ const ResumeDinamic = dynamic(
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5 md:px-7.30% w-11/12 m-auto  ">
-        <Menu />
-        <ResumeDinamic />
-        <Experiences />
+      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5 md:px-7.30%   ">
+        <WrapperContent>
+          <Menu />
+        </WrapperContent>
+        <WrapperContent>
+          <ResumeDinamic />
+        </WrapperContent>
+        <WrapperContent>
+          <Experiences />
+        </WrapperContent>
       </main>
     </ThemeProvider>
   );
