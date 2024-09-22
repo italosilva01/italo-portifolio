@@ -9,7 +9,7 @@ import { MenuSocialMedia } from '@components/Menu/MenuSocialMedia';
 export const Resume = () => {
   return (
     <Box className="flex flex-col gap-10 md:w-full border-1 border-white md:flex-row md:items-center  md:justify-between">
-      <Box className="md:hidden">
+      <Box className="mx-auto md:hidden">
         <Image
           src="/profileM.png"
           width={285}
