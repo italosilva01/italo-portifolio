@@ -5,7 +5,8 @@ import theme from './theme';
 import dynamic from 'next/dynamic';
 import { Experiences } from '@/app/components/molecules/Experiences';
 import WrapperContent from '@components/atons/WrapprContent';
-import Hr from './components/atons/Hr';
+import Hr from '@components/atons/Hr';
+import About from '@components/molecules/About';
 
 const ResumeDinamic = dynamic(
   () =>
@@ -32,6 +33,9 @@ export default function Home() {
           <Experiences />
         </WrapperContent>
         <Hr />
+        <WrapperContent>
+          <About />
+        </WrapperContent>
       </main>
     </ThemeProvider>
   );
