@@ -1,13 +1,15 @@
 import { Typography } from '@mui/material';
 
-interface TextProps {
+import { HTMLAttributes } from 'react';
+
+interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
   content: string;
-  classList?: string;
+
 }
 
-const Text: React.FC<TextProps> = ({ content, classList }) => {
+const Text: React.FC<TextProps> = ({ content, ...rest }) => {
   return (
-    <Typography variant="body1" className={`${classList}`}>
+    <Typography variant="body1" {...rest}>
       {content}
     </Typography>
   );
