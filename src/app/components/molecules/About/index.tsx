@@ -1,6 +1,6 @@
+import { useEffect, useState } from 'react';
 import { Label } from '@components/atons/Label';
 import ShowMyName from '@components/atons/ShowMyName';
-import { useEffect, useState } from 'react';
 import Text from '@components/atons/Text';
 import Image from 'next/image';
 
@@ -35,6 +35,7 @@ const About = () => {
     <div className="flex flex-col md:flex-row gap-8">
       {isMobile ? (
         <Image
+          data-testid="profile_image"
           src="/profile.png"
           alt="Francisco Italo"
           width={285}
@@ -44,6 +45,7 @@ const About = () => {
         />
       ) : (
         <Image
+          data-testid="profile_image"
           src="/profile.png"
           alt="Francisco Italo"
           width={515}
@@ -57,6 +59,7 @@ const About = () => {
         <ShowMyName
           classList="!text-2xl md:!text-5xl md:max-w-[663px]"
           text={myName}
+          
         />
         <Text
           className={styleText}
