@@ -3,7 +3,7 @@ interface ShowMyNameProps {
   text?: string;
   classList?: string;
 }
-const ShowMyName = ({
+const TitleSection = ({
   text = 'Francisco <br /> Italo',
   classList,
 }: ShowMyNameProps) => {
@@ -17,4 +17,4 @@ const ShowMyName = ({
   );
 };
 
-export default ShowMyName;
+export default TitleSection;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Label } from '@components/atons/Label';
-import ShowMyName from '@components/atons/ShowMyName';
+import TitleSection from '@components/atons/ShowMyName';
 import Text from '@components/atons/Text';
 import Image from 'next/image';
 
@@ -56,7 +56,7 @@ const About = () => {
       )}
       <div className="flex flex-col gap-8">
         <Label text="🧐Sobre mim" />
-        <ShowMyName
+        <TitleSection
           classList="!text-2xl md:!text-5xl md:max-w-[663px]"
           text={myName}
           

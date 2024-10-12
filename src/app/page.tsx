@@ -7,6 +7,7 @@ import { Experiences } from '@/app/components/molecules/Experiences';
 import WrapperContent from '@components/atons/WrapprContent';
 import Hr from '@components/atons/Hr';
 import About from '@components/molecules/About';
+import MyProjects from './components/molecules/MyProjects';
 
 const ResumeDinamic = dynamic(
   () =>
@@ -19,13 +20,13 @@ const ResumeDinamic = dynamic(
 );
 
 export default function Home() {
+  const commumStyled = "flex flex-col gap-5.5";
+
   return (
     <ThemeProvider theme={theme}>
       <main className="flex min-h-screen flex-col items-center align-middle gap-5.5    ">
-        <WrapperContent>
+        <WrapperContent className={commumStyled}>
           <Menu />
-        </WrapperContent>
-        <WrapperContent>
           <ResumeDinamic />
         </WrapperContent>
         <Hr />
@@ -35,7 +36,9 @@ export default function Home() {
         <Hr />
         <WrapperContent>
           <About />
+          <MyProjects />
         </WrapperContent>
+
       </main>
     </ThemeProvider>
   );
