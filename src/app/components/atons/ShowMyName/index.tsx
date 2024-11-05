@@ -1,12 +1,12 @@
 import { Typography } from '@mui/material';
-interface ShowMyNameProps {
+interface titleSectionProps {
   text?: string;
   classList?: string;
 }
 const TitleSection = ({
   text = 'Francisco <br /> Italo',
   classList,
-}: ShowMyNameProps) => {
+}: titleSectionProps) => {
   return (
     <Typography
       variant="h1"

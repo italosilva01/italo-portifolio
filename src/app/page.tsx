@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5    ">
+      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5">
         <WrapperContent className={commumStyled}>
           <Menu />
           <ResumeDinamic />
@@ -36,6 +36,8 @@ export default function Home() {
         <Hr />
         <WrapperContent>
           <About />
+        </WrapperContent>
+        <WrapperContent>
           <MyProjects />
         </WrapperContent>
 

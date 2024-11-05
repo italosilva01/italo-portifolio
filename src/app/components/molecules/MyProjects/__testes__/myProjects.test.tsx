@@ -11,18 +11,15 @@ describe('MyProjects component', () => {
 	beforeEach(()=>{
 			render(<MyProjects />)
 	})
-
 	const testRendersWithoutCrashing = ()=>{
 		const cardsProjectsInfo = screen.getAllByRole('generic');
 		expect(screen.getByRole('heading',{level:1,name:/Trabalhos e projetos/})).toBeInTheDocument();
-		expect(screen.getByText('Portfólio')).toBeInTheDocument();
+		expect(screen.getByText(/Portfólio/i)).toBeInTheDocument();
 		expect(cardsProjectsInfo).not.toBeLessThan(THREE);
 	}
-
 	test('renders withou crashing',()=>{
 		testRendersWithoutCrashing();	
 	})
-
 	test('render in mobile screen',()=>{
 		const divWrapperProjects = screen.getByTestId('wrapperProjects');
 		resizeWindow(414,896);

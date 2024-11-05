@@ -1,14 +1,17 @@
 import React from 'react';
 import { Label } from '@components/atons/Label';
+import TitleSection from '@components/atons/ShowMyName';
+import ContainerSection from '@components/atons/ContainerSection';
+import Card from '@components/atons/Card';
 
-const MyProjects = () => {
-    
-    return (
-        <div>
+const MyProjects = () => {   
+    return (       
+            <ContainerSection>
             <Label text='🔗 Portfólio'/>
-            <h2>My Projects</h2>
-            {/* Add your project components or content here */}
-        </div>
+            <TitleSection text='Trabalhos e projetos' />
+
+            <Card>tesAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAte</Card>
+            </ContainerSection>
     );
 };
 
