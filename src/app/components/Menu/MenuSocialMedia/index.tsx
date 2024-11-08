@@ -1,16 +1,20 @@
+import CircleSkeleton from "@/app/ui/circleSkeleton";
 import { Box } from "@mui/material";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export const MenuSocialMedia = () => {
   return (
     <Box className="flex justify-center gap-x-4 md:justify-start">
       <a href="https://github.com/italosilva01" target="_blank">
+      <Suspense fallback={<CircleSkeleton />}>
         <Image
           src="/github.svg"
           width={32}
           height={32}
           alt="GitHub Francisco Italo"
-        />
+          />
+      </Suspense>
       </a>
       <a
         href="https://www.linkedin.com/in/francisco-italo-silva/"

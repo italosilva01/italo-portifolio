@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import TitleSection from '../ShowMyName';
 
-export const Title = () => {
+export const InitSection = () => {
   return (
     <>
       <TitleSection />
