@@ -10,13 +10,15 @@ import MyProjects from '@components/molecules/MyProjects';
 import { Resume } from '@components/molecules/Resume';
 
 export default function Home() {
-  const commumStyled = "flex flex-col gap-5.5";
+  // const commumStyled = "flex flex-col gap-5.5";
 
   return (
     <ThemeProvider theme={theme}>
       <main className="flex min-h-screen flex-col items-center align-middle gap-5.5">
-        <WrapperContent className={commumStyled}>
+        <WrapperContent>
           <Menu />
+        </WrapperContent>
+        <WrapperContent>
           <Resume />
         </WrapperContent>
         <Hr />

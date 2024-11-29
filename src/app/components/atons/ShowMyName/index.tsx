@@ -10,7 +10,7 @@ const TitleSection = ({
   return (
     <Typography
       variant="h1"
-      className={`!text-5xl font-extrabold text-white text-left ${classList}`}
+      className={`md:!text-5xl text-2xl font-extrabold text-white text-left ${classList}`}
       sx={{ color: '#fff' }}
       dangerouslySetInnerHTML={{ __html: text }}
     />

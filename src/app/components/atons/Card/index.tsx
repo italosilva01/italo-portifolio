@@ -10,19 +10,20 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 
 const CardRoot: React.FC<CardProps> = ({ children, className,  ...rest }) => {
     return (
-        <div className={`border-1 rounded-2xl py-[1.875rem] px-[1.5rem] border-purple-dull ${className}`} {...rest}>
+        <div className={`border rounded-2xl py-[1.875rem] px-[1.5rem] border-purple-dull ${className}`} {...rest}>
             {children}
         </div>
     );
 };
 
-const CardTitle = ({children,...rest}:TypographyProps)=>{
-    return <Typography variant='h1' {...rest}>{children}</Typography>
+const CardTitle = ({children, className,...rest}:TypographyProps)=>{
+    return <Typography variant='h1' color="white" className={`text-base ${className}`} fontWeight={800}  {...rest}>{children}</Typography>
 }
 
 
 const CardResume = ({children,...rest}:TypographyProps)=>{
-    return <Typography variant='h2' {...rest}>{children}</Typography>
+    const {className} = rest;
+    return <Typography variant='h2' className={`text-base ${className}`} {...rest}>{children}</Typography>
 }
 
 const CardWrapLabel = ({children,...rest}:HTMLAttributes<HTMLDivElement>)=>{
@@ -31,10 +32,11 @@ const CardWrapLabel = ({children,...rest}:HTMLAttributes<HTMLDivElement>)=>{
 
 interface CardLabelProps {
     text: string;
+    className?: string;
 }
 
-const CardLabel = ({ text }:CardLabelProps) => {
-    return <Label text={text}/>
+const CardLabel = ({ text, className = '' }:CardLabelProps) => {
+    return <Label text={text} className={className}/>
 }
 
 const CardImage = ({ alt, ...rest}:ImageProps)=>{
