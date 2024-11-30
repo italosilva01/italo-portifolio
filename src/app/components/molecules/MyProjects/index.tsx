@@ -12,7 +12,9 @@ const MyProjects = () => {
         <ContainerSection>
             <Label text='🔗 Portfólio' />
             <TitleSection text='Trabalhos e projetos' />
-            {projectsWorked.map(({ title, description, image, link }, index) => <CardResumeProjects key={index} title={title || ''} description={description || ''} link={link || ''} image={image || ''} />)}
+            <div className="flex flex-col items-center w-full gap-8 mt-[100px] md:grid md:grid-cols-5 md:mx-auto">
+                {projectsWorked.map(({ title, description, image, projectLink }, index) => <CardResumeProjects key={index} title={title || ''} description={description || ''} projectLink={projectLink || ''} image={image || ''} />)}
+            </div>
 
         </ContainerSection>
     );
