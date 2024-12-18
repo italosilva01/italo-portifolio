@@ -1,9 +1,10 @@
 'use client';
 
 import { Box, MenuList } from '@mui/material';
-import { ContainerMenu, MenuItemStyled } from './style';
-import Image from 'next/image';
 import { MenuSocialMedia } from '@components/Menu/MenuSocialMedia';
+import Image from 'next/image';
+
+import { ContainerMenu, MenuItemStyled } from './style';
 
 export const Menu = () => {
   return (
@@ -18,8 +19,8 @@ export const Menu = () => {
         <Image src="/Logo.svg" width={36} height={40} alt="logo" />
         <MenuList className="flex" sx={{ color: '#fff' }}>
           <MenuItemStyled>Home</MenuItemStyled>
-          <MenuItemStyled>Sobre mim</MenuItemStyled>
-          <MenuItemStyled>Portfólio</MenuItemStyled>
+          <MenuItemStyled><a href='#about'>Sobre mim</a></MenuItemStyled>
+          <MenuItemStyled><a href="#portfolio">Portfólio</a></MenuItemStyled>
           <MenuItemStyled>Skills</MenuItemStyled>
           <MenuItemStyled>Carreira</MenuItemStyled>
           <MenuItemStyled>Recomendações</MenuItemStyled>

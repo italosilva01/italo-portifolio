@@ -10,7 +10,6 @@ import MyProjects from '@components/molecules/MyProjects';
 import { Resume } from '@components/molecules/Resume';
 
 export default function Home() {
-  // const commumStyled = "flex flex-col gap-5.5";
 
   return (
     <ThemeProvider theme={theme}>

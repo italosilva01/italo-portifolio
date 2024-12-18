@@ -6,7 +6,7 @@ interface ContainerSectionProps extends HTMLAttributes<HTMLDivElement> {
 
 const ContainerSection: React.FC<ContainerSectionProps> = ({ children, ...rest }) => {
     return (
-        <div className={`flex flex-col gap-8 ${rest.className}`}>
+        <div className={`flex flex-col gap-8 ${rest.className}`} {...rest}>
             {children}
         </div>
     );

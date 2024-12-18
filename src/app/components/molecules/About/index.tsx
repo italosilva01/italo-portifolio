@@ -17,7 +17,7 @@ const About = () => {
       setIsMobile(window.innerWidth <= MIN_WIDTH_MEDIUM_SCREEN);
     };
 
-    handleResize(); 
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -30,9 +30,10 @@ const About = () => {
       setMyName('Francisco Italo <br /> Silva do nascimento');
     }
   }, [isMobile]);
+  console.log('isMobile', isMobile);
 
   return (
-    <div className="flex flex-col md:flex-row gap-8">
+    <div className="flex flex-col md:flex-row gap-8" id='about'>
       {isMobile ? (
         <Image
           data-testid="profile_image"
@@ -44,22 +45,24 @@ const About = () => {
           priority
         />
       ) : (
-        <Image
-          data-testid="profile_image"
-          src="/profile.png"
-          alt="Francisco Italo"
-          width={515}
-          height={515}
-          className="rounded-full"
-          priority
-        />
+        <div className='hidden lg:block my-auto'>
+          <Image
+            data-testid="profile_image"
+            src="/profile.png"
+            alt="Francisco Italo"
+            width={515}
+            height={515}
+            className="rounded-full"
+            priority
+          />
+        </div>
       )}
       <div className="flex flex-col gap-8">
         <Label text="🧐Sobre mim" />
         <TitleSection
           classList="!text-2xl md:!text-5xl md:max-w-[663px]"
           text={myName}
-          
+
         />
         <Text
           className={styleText}
