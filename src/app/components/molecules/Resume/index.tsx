@@ -6,13 +6,13 @@ import { DownloadCv } from '@components/atons/DownloadCv';
 import { LetsTalk } from '@components/atons/LetsTalk';
 import { MenuSocialMedia } from '@components/Menu/MenuSocialMedia';
 import { Suspense } from 'react';
-import CircleSkeleton from '@/app/ui/circleSkeleton';
+import CircleSkeleton from '@ui/CircleSkeleton';
 
 export const Resume = () => {
   return (
     <Box className="flex flex-col gap-10 md:w-full border-1 border-white md:flex-row md:items-center md:justify-between">
       <Box className="mx-auto md:hidden">
-        <Suspense fallback={<CircleSkeleton/>}>
+        <Suspense fallback={<CircleSkeleton />}>
           <Image
             src="/profileM.png"
             width={285}
@@ -20,7 +20,7 @@ export const Resume = () => {
             alt="Imagem de perfil do Francisco Italo "
             className="rounded-full"
             priority
-            />
+          />
         </Suspense>
       </Box>
 
