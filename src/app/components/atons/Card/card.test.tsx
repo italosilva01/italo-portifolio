@@ -2,9 +2,9 @@ import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, test } from "vitest";
 import { Card } from ".";
 
-describe('Card components', () => {
+describe('Card root components', () => {
     beforeEach(() => {
-        render(<Card > <p>default text</p></Card>)
+        render(<Card.Root > <p>default text</p></Card.Root>)
     })
 
     test('renders withou crashing', () => {
