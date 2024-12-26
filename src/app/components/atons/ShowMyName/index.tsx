@@ -1,20 +1,20 @@
 import { Typography } from '@mui/material';
-interface ShowMyNameProps {
+interface titleSectionProps {
   text?: string;
   classList?: string;
 }
-const ShowMyName = ({
+const TitleSection = ({
   text = 'Francisco <br /> Italo',
   classList,
-}: ShowMyNameProps) => {
+}: titleSectionProps) => {
   return (
     <Typography
       variant="h1"
-      className={`!text-5xl font-extrabold text-white text-left ${classList}`}
+      className={`md:!text-5xl text-2xl font-extrabold text-white text-left ${classList}`}
       sx={{ color: '#fff' }}
       dangerouslySetInnerHTML={{ __html: text }}
     />
   );
 };
 
-export default ShowMyName;
+export default TitleSection;

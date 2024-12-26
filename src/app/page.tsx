@@ -2,31 +2,23 @@
 import { Menu } from '@components/Menu';
 import { ThemeProvider } from '@mui/material';
 import theme from './theme';
-import dynamic from 'next/dynamic';
 import { Experiences } from '@/app/components/molecules/Experiences';
 import WrapperContent from '@components/atons/WrapprContent';
 import Hr from '@components/atons/Hr';
 import About from '@components/molecules/About';
-
-const ResumeDinamic = dynamic(
-  () =>
-    import('@components/molecules/Resume').then(
-      (component) => component.Resume
-    ),
-  {
-    ssr: false,
-  }
-);
+import MyProjects from '@components/molecules/MyProjects';
+import { Resume } from '@components/molecules/Resume';
 
 export default function Home() {
+
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5    ">
+      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5">
         <WrapperContent>
           <Menu />
         </WrapperContent>
         <WrapperContent>
-          <ResumeDinamic />
+          <Resume />
         </WrapperContent>
         <Hr />
         <WrapperContent>
@@ -35,6 +27,9 @@ export default function Home() {
         <Hr />
         <WrapperContent>
           <About />
+        </WrapperContent>
+        <WrapperContent>
+          <MyProjects />
         </WrapperContent>
       </main>
     </ThemeProvider>

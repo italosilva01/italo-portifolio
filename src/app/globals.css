@@ -19,9 +19,13 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: rgb(var(--text-default-rgba));
   background: var(--foreground);
+  font-family: 'inherit';
 }
 
 @layer utilities {
