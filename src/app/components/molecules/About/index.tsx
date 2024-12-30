@@ -30,7 +30,6 @@ const About = () => {
       setMyName('Francisco Italo <br /> Silva do nascimento');
     }
   }, [isMobile]);
-  console.log('isMobile', isMobile);
 
   return (
     <div className="flex flex-col md:flex-row gap-8" id='about'>
