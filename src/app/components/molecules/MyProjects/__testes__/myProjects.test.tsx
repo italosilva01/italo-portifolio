@@ -1,12 +1,9 @@
 import { beforeEach, describe, expect, test } from 'vitest';
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 
 import MyProjects from '../index';
-import { resizeWindow } from '../../../../../utils/test/index';
 
 const THREE = 3;
-const HUNDRED = 100;
-const ZERO = 0;
 
 describe('MyProjects component', () => {
 	beforeEach(() => {
