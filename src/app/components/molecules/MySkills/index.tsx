@@ -4,10 +4,10 @@ import ContainerSection from '../../atons/ContainerSection';
 import TitleSection from '../../atons/ShowMyName';
 import Text from '../../atons/Text';
 import { Label } from '../../atons/Label';
-import { mySkills } from './helpers';
+import { mySkills, otherSkills } from './helpers';
+import { ToolTipBlack } from '../../atons/ToolTipBlack';
 
 const MySkills = () => {
-
     return (
         <ContainerSection id="skills" className="max-w-full flex flex-col gap-y-4">
             <Label text="🧑‍💻 Skills" className="block md:hidden" />
@@ -25,21 +25,37 @@ const MySkills = () => {
             />
             <div className="w-full flex flex-col gap-y-6">
                 <div>
-                    <Text content="Techs que uso no dia a dia" className="text-sm text-center mb-6 md:text-2xl" />
+                    <Text
+                        content="Techs que uso no dia a dia"
+                        className="text-sm text-center mb-6 md:text-2xl"
+                    />
                     <div className="flex gap-x-[22px] overflow-x-auto flex-nowrap md:justify-center">
                         {mySkills.map((skill) => (
-                            <div key={skill.title} className="flex flex-col items-center md:text-[66px]">
+                            <div
+                                key={skill.title}
+                                className="flex flex-col items-center md:text-[66px]"
+                            >
                                 {skill.icon}
-                            </div>))}
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div>
-                    <Text content="Outras techs com que já realizei projetos" className="text-sm text-center mb-6 md:text-2xl" />
-                    <div className="flex gap-x-[22px] overflow-x-auto flex-nowrap md:justify-center">
-                        {mySkills.map((skill) => (
-                            <div key={skill.title} className="flex flex-col items-center md:text-[66px]">
-                                {skill.icon}
-                            </div>))}
+                    <Text
+                        content="Outras techs com que já realizei projetos"
+                        className="text-sm text-center mb-6 md:text-2xl"
+                    />
+                    <div className="flex gap-x-[22px] border-1 border-red-600 mx-auto overflow-x-auto flex-nowrap md:justify-center">
+                        {otherSkills.map((skill) => (
+                            <ToolTipBlack label={skill.title} key={skill.title}>
+                                <div
+                                    key={skill.title}
+                                    className="flex flex-col items-center md:text-[66px] animate-pulse"
+                                >
+                                    {skill.icon}
+                                </div>
+                            </ToolTipBlack>
+                        ))}
                     </div>
                 </div>
             </div>
