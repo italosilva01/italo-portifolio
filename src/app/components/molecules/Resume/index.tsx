@@ -40,7 +40,7 @@ export const Resume = () => {
           className="rounded-full	"
         />
       </Box>
-      <Box className="md:flex  md:flex-col md:items-end md:gap-2">
+      <Box className="md:flex md:flex-col md:items-end md:gap-2">
         <DownloadCv />
         <LetsTalk />
       </Box>

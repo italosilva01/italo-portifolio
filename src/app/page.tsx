@@ -1,13 +1,15 @@
 'use client';
-import { Menu } from '@components/Menu';
 import { ThemeProvider } from '@mui/material';
-import theme from './theme';
+
+import { Menu } from '@components/Menu';
 import { Experiences } from '@/app/components/molecules/Experiences';
 import WrapperContent from '@components/atons/WrapprContent';
 import Hr from '@components/atons/Hr';
 import About from '@components/molecules/About';
 import MyProjects from '@components/molecules/MyProjects';
 import { Resume } from '@components/molecules/Resume';
+import MySkills from './components/molecules/MySkills';
+import theme from './theme';
 
 export default function Home() {
 
@@ -30,6 +32,9 @@ export default function Home() {
         </WrapperContent>
         <WrapperContent>
           <MyProjects />
+        </WrapperContent>
+        <WrapperContent>
+          <MySkills />
         </WrapperContent>
       </main>
     </ThemeProvider>
