@@ -29,14 +29,17 @@ const MySkills = () => {
                         content="Techs que uso no dia a dia"
                         className="text-sm text-center mb-6 md:text-2xl"
                     />
-                    <div className="flex gap-x-[22px] overflow-x-auto flex-nowrap md:justify-center">
+                    <div className="flex gap-x-[22px] overflow-x-auto flex-nowrap md:justify-center h-20 items-center" data-testid="wrapperSkillsWorkEveryDay" >
                         {mySkills.map((skill) => (
-                            <div
-                                key={skill.title}
-                                className="flex flex-col items-center md:text-[66px]"
-                            >
-                                {skill.icon}
-                            </div>
+                            <ToolTipBlack label={skill.title} key={skill.title} role="tech">
+                                <div
+                                    key={skill.title}
+                                    className="flex flex-col items-center md:text-[66px] animate-pulse"
+                                >
+                                    {skill.icon}
+                                </div>
+                            </ToolTipBlack>
+
                         ))}
                     </div>
                 </div>
@@ -45,9 +48,9 @@ const MySkills = () => {
                         content="Outras techs com que já realizei projetos"
                         className="text-sm text-center mb-6 md:text-2xl"
                     />
-                    <div className="flex gap-x-[22px] border-1 border-red-600 mx-auto overflow-x-auto flex-nowrap md:justify-center">
+                    <div className="flex gap-x-[22px] mx-auto overflow-x-auto flex-nowrap md:justify-center h-20 items-center" data-testid="wrapperOtherSkills">
                         {otherSkills.map((skill) => (
-                            <ToolTipBlack label={skill.title} key={skill.title}>
+                            <ToolTipBlack label={skill.title} key={skill.title} role="tech">
                                 <div
                                     key={skill.title}
                                     className="flex flex-col items-center md:text-[66px] animate-pulse"
@@ -59,7 +62,7 @@ const MySkills = () => {
                     </div>
                 </div>
             </div>
-        </ContainerSection>
+        </ContainerSection >
     );
 };
 

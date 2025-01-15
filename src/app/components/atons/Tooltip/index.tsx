@@ -23,10 +23,10 @@ const ToolTipContent: React.FC<TooltipProps> = ({
     ...rest
 }) => (
     <div
-        className={`absolute bottom-0 z-10 flex flex-col items-center hidden mb-6 group-hover:flex`}
+        className={`absolute bottom-0 z-10 flex flex-col items-center hidden mb-6 group-hover:flex overflow-visible`}
         {...rest}
     >
-        <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md">{label}</span>
+        <span className="relative z-10 p-2 text-xs leading-none text-white whitespace-no-wrap bg-black shadow-lg rounded-md overflow-visible">{label}</span>
     </div>
 );
 
