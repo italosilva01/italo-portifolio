@@ -19,19 +19,19 @@ export const MyJourney = () => {
                 text='Trajetória até aqui'
                 classList="md:mx-auto hidden md:block text-center"
             />
-            <div className="grid grid-rows-2  md:grid-cols-2">
-                <div className="border border-red-600 w-full">
+            <div className="grid grid-rows-2  md:grid-cols-2 w-full overflow-hidden">
+                <div className="border border-red-600 w-full overflow-x-scroll">
                     <div className="w-fit md:mx-auto md:text-center">
                         <Text content="Área profissional" className="font-extrabold text-white whitespace-pre-line md:text-3xl" />
                         <Text content="2020 · Atualmente" className="text-xs md:text-2xl" />
                     </div>
-                    <div className="w-full flex gap-[18px] border border-red-800 overflow-x-auto py-2.5">
+                    <div className="w-full flex gap-[18px] overflow-x-auto py-2.5">
                         {professionalExperiencies.map((item, index) => <CardExperience text={item.title} key={index} textResume={item.description} />)}
                     </div>
 
 
                 </div>
-                <div className="">
+                {/* <div className="">
                     <div className="w-fit md:mx-auto md:text-center">
                         <Text content="Área Acadêmica" className="font-extrabold text-white whitespace-pre-line md:text-3xl" />
                         <Text content="2017 · Atualmente" className="text-xs md:text-2xl" />
@@ -40,7 +40,7 @@ export const MyJourney = () => {
                         {professionalExperiencies.map((item, index) => <p key={index}>{item.title}</p>)}
                     </div>
 
-                </div>
+                </div> */}
             </div>
         </ ContainerSection >
     );
