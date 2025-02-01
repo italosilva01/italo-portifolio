@@ -38,8 +38,9 @@ export const projectsWorked = [{
 ]
 
 export const professionalExperiencies = [{
-    title: 'Desenvolvedor de front-end jr',
+    title: 'Desenvolvedor de front-end',
     description: 'Encarreguei-me do desenvolvimento do frontend utilizando React em conjunto com TypeScript no projeto Max. Este projeto visava centralizar os pedidos provenientes de diversas plataformas (como iFood, Uber Eats, entre outras) para uma loja específica. Através do Max, cada estabelecimento tinha acesso à visualização da quantidade de pedidos para entrega, a plataforma de origem de cada pedido e seu respectivo status atual (pronto, em preparo ou em entrega).',
+    shortDescription: 'Desenvolvi o frontend do Max com React e TypeScript para centralizar pedidos.',
     durationExperience: '2 meses',
     fromTo: 'jul de 2021 - ago de 2021'
 }, {

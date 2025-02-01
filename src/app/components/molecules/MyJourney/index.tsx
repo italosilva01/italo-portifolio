@@ -19,14 +19,14 @@ export const MyJourney = () => {
                 text='Trajetória até aqui'
                 classList="md:mx-auto hidden md:block text-center"
             />
-            <div className="grid grid-rows-2  md:grid-cols-2 w-full overflow-hidden">
-                <div className="border border-red-600 w-full overflow-x-scroll">
+            <div className="grid grid-rows-2 md:grid-cols-2 w-full overflow-hidden">
+                <div className="border border-red-600 w-full overflow-x-scroll md:h-fit md:overflow-auto">
                     <div className="w-fit md:mx-auto md:text-center">
                         <Text content="Área profissional" className="font-extrabold text-white whitespace-pre-line md:text-3xl" />
                         <Text content="2020 · Atualmente" className="text-xs md:text-2xl" />
                     </div>
-                    <div className="w-full flex gap-[18px] overflow-x-auto py-2.5">
-                        {professionalExperiencies.map((item, index) => <CardExperience text={item.title} key={index} textResume={item.description} />)}
+                    <div className="w-full flex gap-[18px] overflow-x-auto py-2.5 md:flex-col md:scroll-auto md:h-full md:items-center">
+                        {professionalExperiencies.map((item, index) => <CardExperience text={item.title} key={index} textResume={item.description} durationExperience={item.durationExperience} fromTo={item.fromTo} shortTextResume={item.shortDescription} />)}
                     </div>
 
 

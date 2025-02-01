@@ -8,7 +8,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
     className?: string;
 }
 
-interface CardHighlightedTextProps {
+interface CardHighlightedTextProps extends HTMLAttributes<HTMLDivElement> {
     text: string
 }
 
@@ -25,8 +25,7 @@ const CardTitle = ({ children, className, ...rest }: TypographyProps) => {
 }
 
 
-const CardResume = ({ children, ...rest }: TypographyProps) => {
-    const { className } = rest;
+const CardResume = ({ children, className = '', ...rest }: TypographyProps) => {
     return <Typography variant='h2' className={`text-base ${className}`} {...rest}>{children}</Typography>
 }
 
@@ -49,7 +48,7 @@ const CardImage = ({ alt, ...rest }: ImageProps) => {
     </div>
 }
 
-const CardHighlightedText = ({ text }: CardHighlightedTextProps) => <p className="font-bold text-xs md:text-lg text-purple-dark">{text}</p>
+const CardHighlightedText = ({ text, className }: CardHighlightedTextProps) => <p className={`text-xs md:text-lg text-purple-dark ${className}`}>{text}</p>
 
 
 export const Card = {
