@@ -37,16 +37,47 @@ export const projectsWorked = [{
 
 ]
 
-export const professionalExperiencies = [{
-    title: 'Desenvolvedor de front-end',
-    description: 'Encarreguei-me do desenvolvimento do frontend utilizando React em conjunto com TypeScript no projeto Max. Este projeto visava centralizar os pedidos provenientes de diversas plataformas (como iFood, Uber Eats, entre outras) para uma loja específica. Através do Max, cada estabelecimento tinha acesso à visualização da quantidade de pedidos para entrega, a plataforma de origem de cada pedido e seu respectivo status atual (pronto, em preparo ou em entrega).',
-    shortDescription: 'Desenvolvi o frontend do Max com React e TypeScript para centralizar pedidos.',
-    durationExperience: '2 meses',
-    fromTo: 'jul de 2021 - ago de 2021'
-}, {
-    title: 'Desenvolvedor de Back end',
-    description: 'Utilizei Java, com o framework Spring Boot, para desenvolver o back-end de uma aeronave de patrulha. Este back-end desempenhava o papel crucial de facilitar a comunicação entre o aplicativo móvel e o drone em operações de patrulha. Além disso, neste projeto, também atuei como pesquisador.',
-    durationExperience: '6 meses',
-    fromTo: 'mai de 2020 - out de 2020'
-}
+export const professionalExperiencies = [
+    {
+        title: "Desenvolvedor de front-end",
+        description: "No projeto Smart Retail, trabalho como Desenvolvedor Front end, usando React com typescript. Desenvolvi diversas features para um sistema de negociação B2B. O sistema visava organizar, gerenciar e realizar vendas de grandes quantidade de mercadorias entre uma multinacional e suas revendedoras. Dentro do sistema também é possivel ver o historico das negociações e o lucro das vendas.",
+        shortDescription: "Desenvolvi features para um sistema B2B de negociação com React e Typescript.",
+        durationExperience: "2 anos 5 meses",
+        fromTo: "jan de 2022 - mai de 2024"
+    }, {
+        title: "Desenvolvedor de front-end",
+        description: "No projeto Smart One. Fui Bolsista Desenvolvedor Front-end com React. Trabalhei em um sistema que centralizava o cadastro de produtos de uma multinacional. O sistema visava mostrar e realizar todo o processo de cadastro de produto, desde o cadastro de informações técnicas até como o marketing iria exibir o novo produto.",
+        shortDescription: "Trabalhei em um sistema com React para cadastro de produtos de uma multinacional.",
+        durationExperience: "1 ano 4 meses",
+        fromTo: "out de 2020 - jan de 2022"
+    }, {
+        title: 'Desenvolvedor de front-end',
+        description: 'Encarreguei-me do desenvolvimento do frontend utilizando React em conjunto com TypeScript no projeto Max. Este projeto visava centralizar os pedidos provenientes de diversas plataformas (como iFood, Uber Eats, entre outras) para uma loja específica. Através do Max, cada estabelecimento tinha acesso à visualização da quantidade de pedidos para entrega, a plataforma de origem de cada pedido e seu respectivo status atual (pronto, em preparo ou em entrega).',
+        shortDescription: 'Desenvolvi o frontend do Max com React e TypeScript para centralizar pedidos.',
+        durationExperience: '2 meses',
+        fromTo: 'jul de 2021 - ago de 2021'
+    }, {
+        title: 'Desenvolvedor de Back end',
+        description: 'Utilizei Java, com o framework Spring Boot, para desenvolver o back-end de uma aeronave de patrulha. Este back-end desempenhava o papel crucial de facilitar a comunicação entre o aplicativo móvel e o drone em operações de patrulha. Além disso, neste projeto, também atuei como pesquisador.',
+        durationExperience: '6 meses',
+        fromTo: 'mai de 2020 - out de 2020',
+        shortDescription: 'Desenvolvi o back-end de uma aeronave de patrulha e fui pesquisador.',
+    }
+]
+
+export const educacionalExperiencies = [
+    {
+        title: "Técnico em Tecnologia da Informação",
+        description: "Atuação como Técnico em Tecnologia da Informação na Universidade Federal do Rio Grande do Norte.",
+        shortDescription: "Técnico em TI na Universidade Federal do Rio Grande do Norte.",
+        durationExperience: "2 anos",
+        fromTo: "2017 - 2019"
+    },
+    {
+        title: "Graduação, Tecnologia da Informação",
+        description: "Graduação em Tecnologia da Informação na Universidade Federal do Rio Grande do Norte. Atividades: Celetista Frontend do Projeto Smart suite, Bolsista Frontend do Projeto Smart suite, Desenvolvedor Fullstack do Projeto Obama.",
+        shortDescription: "Graduação em TI com atuação em projetos como Smart Suite e Obama.",
+        durationExperience: "4 anos",
+        fromTo: "2019 - 2023"
+    }
 ]
