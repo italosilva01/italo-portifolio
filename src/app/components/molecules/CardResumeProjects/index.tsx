@@ -8,7 +8,7 @@ interface CardResumeProjectsProps {
     image: string;
 }
 
-const CardResumeProjects: React.FC<CardResumeProjectsProps> = ({ title, description, image, projectLink }) => {
+const CardResumeProject: React.FC<CardResumeProjectsProps> = ({ title, description, image, projectLink }) => {
     return (
         <a href={projectLink} target='_blank' rel="noopener noreferrer" className="w-fit">
             <Card.Root className="max-w-[300px] max-h-[371px] h-[371px] xl:min-w-[360px] xl:w-[360px] xl:h-[460px] flex flex-col gap-2 cursor-pointer hover:bg-purple-dull-10">
@@ -24,4 +24,4 @@ const CardResumeProjects: React.FC<CardResumeProjectsProps> = ({ title, descript
     );
 };
 
-export default CardResumeProjects;
+export default CardResumeProject;

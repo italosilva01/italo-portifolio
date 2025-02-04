@@ -3,39 +3,28 @@ import { ThemeProvider } from '@mui/material';
 
 import { Menu } from '@components/Menu';
 import { Experiences } from '@/app/components/molecules/Experiences';
-import WrapperContent from '@components/atons/WrapprContent';
 import Hr from '@components/atons/Hr';
 import About from '@components/molecules/About';
 import MyProjects from '@components/molecules/MyProjects';
 import { Resume } from '@components/molecules/Resume';
 import MySkills from './components/molecules/MySkills';
+import { MyJourney } from './components/molecules/MyJourney';
 import theme from './theme';
 
 export default function Home() {
 
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5">
-        <WrapperContent>
-          <Menu />
-        </WrapperContent>
-        <WrapperContent>
-          <Resume />
-        </WrapperContent>
+      <main className="flex min-h-screen flex-col items-center align-middle gap-5.5 w-11/12 m-auto md:px-7.30%">
+        <Menu />
+        <Resume />
         <Hr />
-        <WrapperContent>
-          <Experiences />
-        </WrapperContent>
+        <Experiences />
         <Hr />
-        <WrapperContent>
-          <About />
-        </WrapperContent>
-        <WrapperContent>
-          <MyProjects />
-        </WrapperContent>
-        <WrapperContent>
-          <MySkills />
-        </WrapperContent>
+        <About />
+        <MyProjects />
+        <MySkills />
+        <MyJourney />
       </main>
     </ThemeProvider>
   );
