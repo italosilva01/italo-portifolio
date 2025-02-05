@@ -21,7 +21,7 @@ export const Menu = () => {
           <MenuItemStyled>Home</MenuItemStyled>
           <MenuItemStyled><a href='#about'>Sobre mim</a></MenuItemStyled>
           <MenuItemStyled><a href="#portfolio">Portfólio</a></MenuItemStyled>
-          <MenuItemStyled>Skills</MenuItemStyled>
+          <MenuItemStyled><a href="#skills">Skills</a></MenuItemStyled>
           <MenuItemStyled>Carreira</MenuItemStyled>
           <MenuItemStyled>Recomendações</MenuItemStyled>
           <MenuItemStyled>Contato</MenuItemStyled>

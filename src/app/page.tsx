@@ -10,6 +10,7 @@ import { Resume } from '@components/molecules/Resume';
 import MySkills from './components/molecules/MySkills';
 import { MyJourney } from './components/molecules/MyJourney';
 import theme from './theme';
+import Recomendations from './components/molecules/Recomendations';
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
         <MyProjects />
         <MySkills />
         <MyJourney />
+        <Recomendations />
       </main>
     </ThemeProvider>
   );
