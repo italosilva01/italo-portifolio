@@ -12,6 +12,10 @@ interface CardHighlightedTextProps extends HTMLAttributes<HTMLDivElement> {
     text: string
 }
 
+interface CardQuotesProps extends HTMLAttributes<HTMLImageElement> {
+    size?: number;
+}
+
 const CardRoot: React.FC<CardProps> = ({ children, className, ...rest }) => {
     return (
         <div className={`border rounded-2xl py-[1.875rem] px-[1.5rem] border-purple-dull cursor-pointer hover:bg-purple-dull-10 ${className}`} {...rest}>
@@ -50,6 +54,7 @@ const CardImage = ({ alt, ...rest }: ImageProps) => {
 
 const CardHighlightedText = ({ text, className }: CardHighlightedTextProps) => <p className={`text-xs md:text-lg text-purple-dark ${className}`}>{text}</p>
 
+const CardQuotes = ({ size = 19 }: CardQuotesProps) => <Image src="/Quotes.svg" alt='quotes' width={size} height={size} />
 
 export const Card = {
     Root: CardRoot,
@@ -58,5 +63,6 @@ export const Card = {
     WrapLabel: CardWrapLabel,
     Label: CardLabel,
     Image: CardImage,
-    Highlight: CardHighlightedText
+    Highlight: CardHighlightedText,
+    Quotes: CardQuotes
 }

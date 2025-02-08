@@ -9,7 +9,7 @@ import { CardExperience } from '../CardExperiences';
 
 export const MyJourney = () => {
     return (
-        <ContainerSection className="w-full flex flex-col gap-y-4 md:gap-y-6">
+        <ContainerSection id='carrer' className="w-full flex flex-col gap-y-4 md:gap-y-6">
             <Label text='💼 Carreira' className="md:mx-auto" />
             <TitleSection
                 text='Trajetória<br/>até aqui'
@@ -37,8 +37,6 @@ export const MyJourney = () => {
                     <div className="w-full flex gap-[18px] overflow-x-auto py-2.5 md:flex-col md:scroll-auto md:items-center">
                         {educacionalExperiencies.map((item, index) => <CardExperience text={item.title} key={index} textResume={item.description} durationExperience={item.durationExperience} fromTo={item.fromTo} shortTextResume={item.shortDescription} />)}
                     </div>
-
-
                 </div>
             </div>
         </ ContainerSection >
