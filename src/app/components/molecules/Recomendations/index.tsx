@@ -18,13 +18,12 @@ const Recomendations = () => {
                 text="Em depoimento"
                 classList="mb-4 hidden md:mx-auto md:block"
             />
-            <div className="flex w-full overflow-x-auto gap-6 md:grid md:grid-cols-2 md:!gap-3 lg:grid-cols-3">
+            <div className="flex w-full overflow-x-auto gap-6 md:grid md:justify-center md:grid-cols-2 md:!gap-3 md:justify-items-center xl:grid-cols-3">
                 {recomendations.map(({ imageProfile, textRecomendation, namePerson, position }) =>
                     <CardRecomendations image={imageProfile} description={textRecomendation} key={namePerson} name={namePerson} position={position} />
                 )}
             </div>
-        </ContainerSection>
-    )
+        </ContainerSection>)
 }
 
 export default Recomendations
