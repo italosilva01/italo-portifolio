@@ -8,7 +8,7 @@ import { recomendations } from '@/utils/constants'
 
 const Recomendations = () => {
     return (
-        <ContainerSection id='#recomendations' className='w-full flex flex-col gap-y-4'>
+        <ContainerSection id='recomendations' className='w-full flex flex-col gap-y-6'>
             <Label text='💬 Recomendações' className='md:mx-auto w-fit' />
             <TitleSection
                 text="Em<br/> depoimento"

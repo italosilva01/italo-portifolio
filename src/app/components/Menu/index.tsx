@@ -24,7 +24,7 @@ export const Menu = () => {
           <MenuItemStyled><a href="#skills">Skills</a></MenuItemStyled>
           <MenuItemStyled><a href="#carrer">Carreira</a></MenuItemStyled>
           <MenuItemStyled><a href="#recomendations">Recomendações</a></MenuItemStyled>
-          <MenuItemStyled>Contato</MenuItemStyled>
+          <MenuItemStyled><a href="#contact">Contato</a></MenuItemStyled>
         </MenuList>
       </Box>
     </ContainerMenu>

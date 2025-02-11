@@ -19,9 +19,11 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center align-middle gap-5.5 w-11/12 m-auto md:px-7.30%">
         <Menu />
         <Resume />
-        <Hr />
-        <Experiences />
-        <Hr />
+        <div className="hidden md:block">
+          <Hr />
+          <Experiences />
+          <Hr />
+        </div>
         <About />
         <MyProjects />
         <MySkills />
