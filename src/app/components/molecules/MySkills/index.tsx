@@ -9,7 +9,7 @@ import { ToolTipBlack } from '../../atons/ToolTipBlack';
 
 const MySkills = () => {
     return (
-        <ContainerSection id="skills" className="max-w-full flex flex-col gap-y-4">
+        <ContainerSection id="skills" className="max-w-full flex flex-col gap-y-6">
             <Label text="🧑‍💻 Skills" className="block md:hidden" />
             <Label
                 text="🧑‍💻 Skills · Experiências"

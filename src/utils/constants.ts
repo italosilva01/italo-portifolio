@@ -81,3 +81,42 @@ export const educacionalExperiencies = [
         fromTo: "2019 - 2023"
     }
 ]
+
+export const recomendations = [
+    {
+        namePerson: "Igor brito",
+        position: "Engenheiro de testes",
+        textRecomendation: "Um excelente profissional \! \nAlém de dominar bem as tecnologias, possui uma boa capacidade de se adaptar.\nItalo é assíduo nas reuniões e sempre traz opiniões relevantes para o processo de trabalho e o desenvolvimento do produto.",
+        imageProfile: "/imagesProfiles/igor-profile.jpg"
+    },
+    {
+        namePerson: "Eduardo Soares",
+        position: "Dev Frontend",
+        textRecomendation: "Italo é um desenvolvedor com muitas habilidades técnicas. Sempre está buscando formas de aprender e compartilhar conhecimento com a equipe, buscando as melhores práticas de desenvolvimento. Tem a capacidade de tomar decisão técnica e ágil, junto com o seu ótimo humor, torna-se um desenvolvedor excelente e capacitado que toda equipe precisa ter.",
+        imageProfile: "/imagesProfiles/eduardo-profile.jpg"
+    },
+    {
+        namePerson: "Kleitianne Macêdo",
+        position: "Product Designer",
+        textRecomendation: "Italo é um desenvolvedor muito ágil que sempre busca estar atualizado sobre o que está acontecendo no produto. Sempre busca evoluir para trazer novidades para a equipe de desenvolvimento e encontrar soluções para os obstáculos. É uma pessoa amigável e simpática na rotina de trabalho. Foi ótimo trabalhar na mesma equipe que ele.",
+        imageProfile: "/imagesProfiles/kleitiane-profile.jpg"
+    },
+    {
+        namePerson: "Thiago Cordeiro",
+        position: "Dev de Software",
+        textRecomendation: "Italo é um desenvolvedor fora da curva. Está sempre melhorando suas habilidades técnicas e suas soft-skills. É um excelente colega de trabalho, disposto a ajudar sempre que o solicitarem e embora experiente e especialista na sua área de atuação, está constantemente aberto a ouvir sugestões de novas técnicas e tecnologias. No que ele decida aprender, certamente se tornará referência.",
+        imageProfile: "/imagesProfiles/thiago-profile.jpg"
+    },
+    {
+        namePerson: "Lucas Lima",
+        position: "Desenvolvedor",
+        textRecomendation: "Um ótimo companheiro de equipe, sempre presente quando precisa e pronto para resolver problemas. Aprendeu muito durante o tempo que trabalhamos juntos.",
+        imageProfile: "/imagesProfiles/lucas-profilie.jpg"
+    },
+    {
+        namePerson: "Antônio Erisvan",
+        position: "Dev Fullstack",
+        textRecomendation: "Um bom companheiro de equipe. Sempre disposto a aprender mais e ajudar. Sempre animava a equipe.",
+        imageProfile: "/imagesProfiles/erisvan-profile.jpg"
+    }
+]

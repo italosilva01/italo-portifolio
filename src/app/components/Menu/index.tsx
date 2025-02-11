@@ -21,10 +21,10 @@ export const Menu = () => {
           <MenuItemStyled>Home</MenuItemStyled>
           <MenuItemStyled><a href='#about'>Sobre mim</a></MenuItemStyled>
           <MenuItemStyled><a href="#portfolio">Portfólio</a></MenuItemStyled>
-          <MenuItemStyled>Skills</MenuItemStyled>
-          <MenuItemStyled>Carreira</MenuItemStyled>
-          <MenuItemStyled>Recomendações</MenuItemStyled>
-          <MenuItemStyled>Contato</MenuItemStyled>
+          <MenuItemStyled><a href="#skills">Skills</a></MenuItemStyled>
+          <MenuItemStyled><a href="#carrer">Carreira</a></MenuItemStyled>
+          <MenuItemStyled><a href="#recomendations">Recomendações</a></MenuItemStyled>
+          <MenuItemStyled><a href="#contact">Contato</a></MenuItemStyled>
         </MenuList>
       </Box>
     </ContainerMenu>

@@ -8,7 +8,7 @@ export const Experiences = () => {
   return (
     <Box className="w-full">
       <div className="flex flex-col gap-5 items-center">
-        <Box className="flex flex-col md:flex-row justify-center gap-9 ">
+        <Box className="flex-col md:flex-row justify-center gap-9 hidden md:flex ">
           <CardInfo
             icon={IconCode}
             title="Quase 5 anos como"
