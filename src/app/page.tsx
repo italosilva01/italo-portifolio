@@ -11,6 +11,7 @@ import MySkills from './components/molecules/MySkills';
 import { MyJourney } from './components/molecules/MyJourney';
 import theme from './theme';
 import Recomendations from './components/molecules/Recomendations';
+import Conect from './components/organimis/Conect';
 
 export default function Home() {
 
@@ -19,16 +20,17 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center align-middle gap-5.5 w-11/12 m-auto md:px-7.30%">
         <Menu />
         <Resume />
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <Hr />
           <Experiences />
           <Hr />
-        </div>
+        </div> */}
         <About />
         <MyProjects />
         <MySkills />
         <MyJourney />
         <Recomendations />
+        <Conect />
       </main>
     </ThemeProvider>
   );
