@@ -7,7 +7,7 @@ export const DownloadCv = () => {
       href="/Francisco Italo Silva do Nascimento - curriculo.pdf"
       target="_blank"
       download
-      className="text-purple-dark/[0.5]"
+      className="text-purple-dark"
     >
       Baixar CV <DownloadIcon />
     </Link>
