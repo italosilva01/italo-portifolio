@@ -10,7 +10,7 @@ import {
     FaJava,
     FaNodeJs,
 } from 'react-icons/fa';
-import { RiNextjsFill } from 'react-icons/ri';
+import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 import { SiTypescript, SiStyledcomponents, SiMui } from 'react-icons/si';
 import { GrGraphQl } from 'react-icons/gr';
 
@@ -35,6 +35,7 @@ export const mySkills = [
     { title: 'figma', icon: <FaFigma {...iconsStyle} /> },
     { title: 'github', icon: <FaGithub {...iconsStyle} /> },
     { title: 'git', icon: <FaGitAlt {...iconsStyle} /> },
+    { title: 'tailwind', icon: <RiTailwindCssFill {...iconsStyle} /> },
 ];
 
 export const otherSkills = [
