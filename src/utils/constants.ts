@@ -67,19 +67,20 @@ export const professionalExperiencies = [
 
 export const educacionalExperiencies = [
     {
-        title: "Técnico em Tecnologia da Informação",
-        description: "Atuação como Técnico em Tecnologia da Informação na Universidade Federal do Rio Grande do Norte.",
-        shortDescription: "Técnico em TI na Universidade Federal do Rio Grande do Norte.",
-        durationExperience: "2 anos",
-        fromTo: "2017 - 2019"
-    },
-    {
         title: "Graduação, Tecnologia da Informação",
         description: "Graduação em Tecnologia da Informação na Universidade Federal do Rio Grande do Norte. Atividades: Celetista Frontend do Projeto Smart suite, Bolsista Frontend do Projeto Smart suite, Desenvolvedor Fullstack do Projeto Obama.",
         shortDescription: "Graduação em TI com atuação em projetos como Smart Suite e Obama.",
         durationExperience: "4 anos",
         fromTo: "2019 - 2023"
+    },
+    {
+        title: "Técnico em Tecnologia da Informação",
+        description: "Atuação como Técnico em Tecnologia da Informação na Universidade Federal do Rio Grande do Norte.",
+        shortDescription: "Técnico em TI na Universidade Federal do Rio Grande do Norte.",
+        durationExperience: "2 anos",
+        fromTo: "2017 - 2019"
     }
+
 ]
 
 export const recomendations = [
