@@ -13,7 +13,7 @@ export const LetsTalk = ({ className, sizeIcon = SIZE }: LetsTalkProps) => {
       sx={{
         padding: PADDING,
       }}
-      className={`border-purple-dark/[0.5] text-purple-dark/[0.5] md:rounded-xl ${className}`}>
+      className={`border-purple-dark text-purple-dark md:rounded-xl hover:bg-purple-dark/[0.2] ${className}`}>
       <a
         href={`https://api.whatsapp.com/send?phone=05584987589718`}
         target="_blank"

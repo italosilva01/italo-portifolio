@@ -11,7 +11,7 @@ import { projectsWorked } from '../../../../utils/constants';
 
 const MyProjects = () => {
     return (
-        <ContainerSection id="portfolio" className='max-w-full'>
+        <ContainerSection id="portfolio" className='max-w-full flex flex-col gap-y-6'>
             <Label text='🔗 Portfólio' />
             <TitleSection text='Trabalhos e projetos' />
             <div data-testid='wrapperProjects' className="flex overflow-scroll md:overflow-auto md:grid justify-items-center items-center w-full gap-8 mt-20 md:grid-cols-2 2xl:grid-cols-3 mx-auto">
