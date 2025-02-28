@@ -20,19 +20,19 @@ export const projectsWorked = [{
     projectLink: 'https://faladev-dc819dbbcf82.herokuapp.com/'
 
 },
-{
-    title: "Smart Retail",
-    description: "Plataforma B2B para gerenciar vendas de grandes volumes entre uma multinacional e suas revendedoras, com funcionalidades de organização, histórico de negociações e acompanhamento de lucros.",
-    image: '/imageProjects/smartRetail.PNG',
-    projectLink: 'https://dev-retail.smartsuite.imd.ufrn.br/'
-},
+    // {
+    //     title: "Smart Retail",
+    //     description: "Plataforma B2B para gerenciar vendas de grandes volumes entre uma multinacional e suas revendedoras, com funcionalidades de organização, histórico de negociações e acompanhamento de lucros.",
+    //     image: '/imageProjects/smartRetail.PNG',
+    //     projectLink: 'https://dev-retail.smartsuite.imd.ufrn.br/'
+    // },
 
-{
-    title: "Smart One",
-    description: "Plataforma centralizadora para o cadastro de produtos de uma multinacional, abrangendo desde o registro de informações técnicas até a definição de estratégias de marketing para a exibição do novo produto.",
-    image: '/imageProjects/smartOne.PNG',
-    projectLink: 'https://dev-one.smartsuite.imd.ufrn.br/'
-}
+    // {
+    //     title: "Smart One",
+    //     description: "Plataforma centralizadora para o cadastro de produtos de uma multinacional, abrangendo desde o registro de informações técnicas até a definição de estratégias de marketing para a exibição do novo produto.",
+    //     image: '/imageProjects/smartOne.PNG',
+    //     projectLink: 'https://dev-one.smartsuite.imd.ufrn.br/'
+    // }
 
 
 ]
